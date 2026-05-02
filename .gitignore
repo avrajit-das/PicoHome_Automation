@@ -1,0 +1,12 @@
+#Secret credentials
+secret.py
+config.py
+
+#MicroPython complied files
+*.mpy
+
+# OS files
+.DS_Store
+.db
+.db_store
+Thumb.db
