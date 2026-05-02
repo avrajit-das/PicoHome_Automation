@@ -378,11 +378,11 @@ home-automation/
 
 ```
 Pico W ──WiFi──► Firebase RTDB ──Realtime──► Web Dashboard
-  │                    │                          │
-  ├─ Reads relay       ├─ Stores sensor data      ├─ Firebase Auth
-  │  states every 2s   ├─ Stores relay cmds       ├─ Toggle switches
-  └─ Pushes DHT11      └─ Device status           └─ Live chart
-     every 10s                                    └─ History log
+  │                       │                          │
+  ├─ Reads relay          ├─ Stores sensor data      ├─ Firebase Auth
+  │  states everys 0.5s   ├─ Stores relay cmds       ├─ Toggle switches
+  └─ Pushes DHT11         └─ Device status           └─ Live chart
+     every 10s                                       └─ History log
 ```
 
 ---
