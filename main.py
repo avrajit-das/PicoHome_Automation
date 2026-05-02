@@ -22,17 +22,17 @@ import dht
 # ─────────────────────────────────────────────────────────
 #  USER CONFIGURATION  –  Fill these before flashing
 # ─────────────────────────────────────────────────────────
-WIFI_SSID     = "TP-Link_F250"
-WIFI_PASSWORD = "Etce@2025"
+WIFI_SSID     = "YOUR_SSID"
+WIFI_PASSWORD = "YOUR_PASSWORD"
 
 # Firebase project settings
-FIREBASE_URL  = "https://picohome-e6e91-default-rtdb.firebaseio.com/"
+FIREBASE_URL  = "https://your-project.rtdb.firebaseio.com/"
 FIREBASE_AUTH = ""
 # If using database rules (open for testing), leave FIREBASE_AUTH = ""
 # For production use a server-side secret from Firebase console
 
 # How often Pico polls Firebase for relay commands (seconds)
-POLL_INTERVAL = 2
+POLL_INTERVAL = 0.5
 
 # How often Pico pushes sensor data (seconds)
 SENSOR_INTERVAL = 10
@@ -216,7 +216,7 @@ def main():
             push_sensor_data()
             last_sensor_push = now
 
-        time.sleep(0.5)
+        time.sleep(0.1)
 
 
 main()
