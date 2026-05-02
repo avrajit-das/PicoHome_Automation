@@ -1035,17 +1035,16 @@ canvas#sensorChart { width: 100% !important; height: 100% !important; }
 // ════════════════════════════════════════════════
 //  FIREBASE CONFIG
 // ════════════════════════════════════════════════
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "yourproject.firebaseapp.com",
-  databaseURL: "https:your-project.firebaseio.com",
-  projectId: "picohome-e6e91",
-  storageBucket: "yourproject.firebasestorage.app",
-  messagingSenderId: "YOUR_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_ID"
+const firebaseConfig = 
+{
+  apiKey:            "YOUR_ACTUAL_API_KEY",
+  authDomain:        "home-automation-xxxxx.firebaseapp.com",
+  databaseURL:       "https://home-automation-xxxxx-default-rtdb.firebaseio.com",
+  projectId:         "home-automation-xxxxx",
+  storageBucket:     "home-automation-xxxxx.appspot.com",
+  messagingSenderId: "123456789012",
+  appId:             "1:123456789:web:abcdef123456"
 };
-
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db   = firebase.database();
